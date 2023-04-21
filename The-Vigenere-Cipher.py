@@ -29,3 +29,5 @@ for char in plaintext:
     # Convert the letter to its corresponding number value
     plaintext_num = sub_dict[char]
     keyword_num = sub_dict[keyword[keyword_index]]
+    # Calculate the ciphertext number value
+    ciphertext_num = (plaintext_num + keyword_num) % 26
