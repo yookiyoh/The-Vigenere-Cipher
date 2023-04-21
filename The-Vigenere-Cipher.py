@@ -71,3 +71,5 @@ while True:
             quit()
 
 # Currently testing the program
+# Program execution was successful
+# End of program
