@@ -53,3 +53,7 @@ for star in stars:
 
 # Create the ciphertext surface 
 ciphertext_surface = font.render(ciphertext, True, (255, 255, 255))
+
+# Center the ciphertext on the screen
+ciphertext_x = (size[0] - ciphertext_surface.get_width()) / 2
+ciphertext_y = (size[1] - ciphertext_surface.get_height()) / 2
