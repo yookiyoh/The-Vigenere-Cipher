@@ -41,3 +41,12 @@ pygame.init()
 size = (800, 600)
 screen = pygame.display.set_mode(size)
 pygame.display.set_caption("Vigenere Cipher")
+
+# Create a white star background
+stars = []
+for i in range(100):
+    x = random.randint(0, size[0] - 1)
+    y = random.randint(0, size[1] - 1)
+    stars.append((x, y))
+for star in stars:
+    pygame.draw.polygon(screen, (255, 255, 255), [(star[0], star[1] - 3), (star[0] + 3, star[1]), (star[0], star[1] + 3), (star[0] - 3, star[1])])
