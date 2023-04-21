@@ -33,3 +33,5 @@ for char in plaintext:
     ciphertext_num = (plaintext_num + keyword_num) % 26
     # Convert the ciphertext number value back to its corresponding letter
     ciphertext += list(sub_dict.keys())[list(sub_dict.values()).index(ciphertext_num)]
+    # Update the keyword index to wrap around to the beginning of the keyword if necessary
+    keyword_index = (keyword_index + 1) % len(keyword)
