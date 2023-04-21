@@ -17,3 +17,12 @@ sub_dict = {'A': 0, 'B': 1, 'C': 2, 'D': 3, 'E': 4, 'F': 5, 'G': 6, 'H': 7, 'I':
 # Get the plaintext and keyword from user input
 plaintext = input("Enter a message (all uppercase, no spaces): ")
 keyword = input("Enter a keyword (all uppercase): ")
+
+# Encrypt the plaintext using the Vigenere cipher
+ciphertext = ""
+keyword_index = 0
+for char in plaintext:
+    if char not in sub_dict:
+        # Ignore non-letter characters
+        ciphertext += char
+        continue
