@@ -62,3 +62,10 @@ ciphertext_y = (size[1] - ciphertext_surface.get_height()) / 2
 screen.blit(ciphertext_surface, (ciphertext_x, ciphertext_y))
 
 pygame.display.flip()
+
+# Wait for the user to close the window
+while True:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            pygame.quit()
+            quit()
