@@ -4,3 +4,7 @@
 
 import pygame
 import random
+
+# Define the font for Pygame
+pygame.font.init()
+font - pyamgae.font.SysFont("monospalce", 48)
