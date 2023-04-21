@@ -50,3 +50,6 @@ for i in range(100):
     stars.append((x, y))
 for star in stars:
     pygame.draw.polygon(screen, (255, 255, 255), [(star[0], star[1] - 3), (star[0] + 3, star[1]), (star[0], star[1] + 3), (star[0] - 3, star[1])])
+
+# Create the ciphertext surface 
+ciphertext_surface = font.render(ciphertext, True, (255, 255, 255))
