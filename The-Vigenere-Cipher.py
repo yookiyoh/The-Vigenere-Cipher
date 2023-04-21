@@ -4,7 +4,7 @@
 
 # Start Code
 
-# Define the character substitute dicitionary
+# Define the character substitute dictionary
 
 # Get inputs
 
@@ -21,3 +21,5 @@
 # Create a Pygame window and display (print) the ciphertext
 
 # Wait for the user to close the window 
+
+# End of program
