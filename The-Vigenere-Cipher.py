@@ -26,3 +26,6 @@ for char in plaintext:
         # Ignore non-letter characters
         ciphertext += char
         continue
+    # Convert the letter to its corresponding number value
+    plaintext_num = sub_dict[char]
+    keyword_num = sub_dict[keyword[keyword_index]]
