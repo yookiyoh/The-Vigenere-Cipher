@@ -35,3 +35,9 @@ for char in plaintext:
     ciphertext += list(sub_dict.keys())[list(sub_dict.values()).index(ciphertext_num)]
     # Update the keyword index to wrap around to the beginning of the keyword if necessary
     keyword_index = (keyword_index + 1) % len(keyword)
+
+# Create the Pygame window and display the ciphertext
+pygame.init()
+size = (800, 600)
+screen = pygame.display.set_mode(size)
+pygame.display.set_caption("Vigenere Cipher")
